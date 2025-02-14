@@ -1,12 +1,60 @@
-html,body {
+/* Start coding here */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"inter" ;
     width: 100%;
     min-height: 100vh; /* ให้เว็บเต็มหน้าจอเสมอ */
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     background-color: #F6F6FB; /* กำหนดสีพื้นหลัง */
     overflow-x: hidden; /* ป้องกันการเลื่อนแนวนอน */
 }
+.inter {
+    font-family: "inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+  }
+.feat-card{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 120px 120px 140px 120px;
+}
+.card-workflow , .card-performance,.card-interface{
+    display: flex;
+    flex-direction: column;
+    width: 387px;
+    height: 272px;
+    border-radius: 24px;
+    padding: 28px;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+.card-workflow{
+    background: #D7E5F6;
+    
+}
+.card-performance{
+    background: #D8E0FC;
+
+}
+.card-interface{
+    background: #E8DCF6;
+}
+.icon-1,.icon-2,.icon-3{
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+}
+
     
 a {
     text-decoration: none; /* ไม่ให้ข้อความลิงก์มีเส้นขีด */
